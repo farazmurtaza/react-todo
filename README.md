@@ -1,1 +1,1 @@
-Todo app using MERN stack.
+Todo app with React
