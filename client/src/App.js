@@ -2,6 +2,7 @@ import React from 'react';
 import AppNavbar from './components/AppNavbar';
 import TodoList from './components/TodoList';
 import ItemModal from './components/ItemModal';
+import Footer from './components/Footer';
 import { Container } from 'reactstrap';
 
 import { Provider } from 'react-redux';
@@ -18,7 +19,9 @@ function App() {
         <Container>
           <TodoList />
           <ItemModal />
+          <Footer />
         </Container>
+        
       </div>
     </Provider>
   );

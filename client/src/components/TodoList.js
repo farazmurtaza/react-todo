@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, ListGroup, ListGroupItem, Button } from 'reactstrap';
+import { Media, Container, ListGroup, ListGroupItem, Button } from 'reactstrap';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import { connect } from 'react-redux';
 import { getItems, deleteItem } from '../actions/itemActions';
@@ -20,8 +20,13 @@ class TodoList extends Component {
         
         return(
             <Container>
-                
-
+                <Media>
+                    <Media body>
+                        <Media heading>
+                        You have following tasks pending
+                        </Media>
+                    </Media>
+                </Media>
                 <ListGroup>
                     <TransitionGroup>
                         {items.map(({ _id, name })=>(

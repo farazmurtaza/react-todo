@@ -44,7 +44,7 @@ class ItemModal extends Component {
         return(
             <div>
                 <Button
-                    color="light" style={{marginTop: '2rem', marginLeft: '1rem'}}
+                    color="dark" style={{marginTop: '2rem', marginLeft: '1rem'}}
                     onClick={this.toggle}
                 >Add new task</Button>
 
