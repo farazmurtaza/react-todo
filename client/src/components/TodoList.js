@@ -2,21 +2,20 @@ import React, { Component } from 'react';
 import { Container, ListGroup, ListGroupItem, Button } from 'reactstrap';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import uuid from 'uuid';
-import { STATES } from 'mongoose';
+import { connect } from 'react-redux';
+import { getItems } from '../actions/itemActions';
+import PropTypes from 'prop-types';
+
+import { STATES } from 'mongoose'; //idk how this got here
 
 class TodoList extends Component {
 
-    state = {
-        items: [
-            { id: uuid(), name: 'create react app'},
-            { id: uuid(), name: 'deploy to firebase'},
-            { id: uuid(), name: 'push to github'},
-            { id: uuid(), name: 'send email to xyz'}
-        ]
+    componentDidMount() {
+        this.props.getItems();
     }
 
     render(){
-        const { items } = this.state;
+        const { items } = this.props.item;
         
         return(
             <Container>
@@ -63,5 +62,14 @@ class TodoList extends Component {
 
 }
 
-export default TodoList;
+TodoList.propTypes = {
+    getItems: PropTypes.func.isRequired,
+    item: PropTypes.object.isRequired
+}
+
+const mapStateToProps = ( state ) => ({
+    item: state.item
+});
+
+export default connect(mapStateToProps, { getItems })(TodoList);
 
