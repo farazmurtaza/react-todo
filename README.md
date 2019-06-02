@@ -59,7 +59,7 @@ Or you can verify by navigating to your server address in your preferred browser
 http://localhost:3000/
 ```
 
-### References
+# References
 * https://reactjs.org/tutorial/tutorial.html
 * https://reactstrap.github.io/
 * https://github.com/reduxjs/redux-thunk
