@@ -4,7 +4,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-
+<img src="https://github.com/favicon.ico" width="48">
 This is a simple todo app, built using React. I created this application to learn how React works. The backend is deployed on Heroku and database is hosted on MLab.com. Here is the list of all technologies used.
 
   - Node.js
