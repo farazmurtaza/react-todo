@@ -4,7 +4,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-<img src="https://sethreid.co.nz/content/uploads/2017/05/react-logo-2.png" width="100" height="48">
+<img src="https://www.import.io/wp-content/uploads/2017/10/React-logo-1.png" width="100" height="48">
 
 <img src="https://camo.githubusercontent.com/f28b5bc7822f1b7bb28a96d8d09e7d79169248fc/687474703a2f2f692e696d6775722e636f6d2f4a65567164514d2e706e67" width="100" height="48">
 
